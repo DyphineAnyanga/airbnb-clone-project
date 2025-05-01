@@ -80,4 +80,57 @@ Oversees project timelines, coordinates tasks among team members, ensures docume
 - A **review** is submitted by a **user** for a **property**.
 - A **payment** is linked to a specific **booking**.
 
- 
+
+## Feature Breakdown
+
+- **User Management**  
+  Allows users to register, log in, and manage profiles. Supports different roles such as guests and hosts.
+
+- **Property Management**  
+  Hosts can create, update, or delete property listings. Listings include descriptions, images, and availability.
+
+- **Booking System**  
+  Guests can view properties, select dates, and make bookings. The system ensures availability and handles scheduling conflicts.
+
+- **Review System**  
+  After completing a stay, guests can leave reviews with star ratings and comments for properties.
+
+- **Payment Integration**  
+  Handles secure payment processing for bookings, ensuring successful and verifiable transactions.
+
+
+## API Security
+
+- **Authentication**: Secure login using JWT (JSON Web Tokens) to ensure that users are verified before accessing protected routes.
+
+- **Authorization**: Role-based access control to restrict users from performing actions outside their permissions (e.g., only hosts can create listings).
+
+- **Rate Limiting**: Prevents abuse by limiting the number of API requests per user/IP over time.
+
+- **Data Validation and Sanitization**: Ensures that all inputs are checked and cleaned to prevent SQL injection, XSS, and other attacks.
+
+**Why Security Matters:**
+- **User Data Protection**: Keeps personal information such as emails and payment info secure.
+- **Business Integrity**: Prevents unauthorized changes to listings and transactions.
+- **Payment Security**: Protects against fraud during transactions.
+
+
+## CI/CD Pipeline
+
+**What is CI/CD?**  
+CI/CD stands for Continuous Integration and Continuous Deployment. It automates the process of testing, building, and deploying applications, ensuring faster and safer releases.
+
+**Tools Used:**
+- **GitHub Actions**: To automate testing and deployment on every commit.
+- **Docker**: To containerize the application for consistent environments across development, staging, and production.
+
+**Benefits:**
+- Reduces manual errors.
+- Enables rapid iteration and feedback.
+- Ensures the app remains in a deployable state at all times.
+
+
+## Manual Review
+This `README.md` file contains all the required sections for review as part of the Airbnb Clone Project setup.
+
+GitHub Repository: [airbnb-clone-project](https://github.com/DyphineAnyanga/airbnb-clone-project)
