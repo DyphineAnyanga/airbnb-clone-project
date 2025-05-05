@@ -130,6 +130,125 @@ CI/CD stands for Continuous Integration and Continuous Deployment. It automates 
 - Ensures the app remains in a deployable state at all times.
 
 
+ ## UI/UX Design Planning
+
+### Design Goals:
+The primary design goals for this project are:
+- **Intuitive Booking Flow**: Ensure that users can easily find and book accommodations with minimal steps.
+- **Visual Consistency**: Maintain consistent design elements across the website to provide a seamless user experience.
+- **Mobile Responsiveness**: The design must be fully responsive, providing an optimal user experience on both desktop and mobile devices.
+- **Fast Loading Times**: Optimize images, scripts, and other assets to ensure fast page loads.
+- **User-Centered Design**: Focus on simplifying the booking process to meet user needs and provide a pleasant experience.
+
+### Key Features:
+The key features to be implemented in the UI/UX design include:
+- **Property Search and Filtering**: Allow users to search for properties based on criteria such as location, price range, and availability.
+- **Detailed Property Viewing**: Provide users with detailed information about each property, including images, descriptions, and amenities.
+- **Secure Checkout Process**: Ensure the booking and payment process is smooth, secure, and user-friendly.
+- **User Authentication**: Enable users to create accounts, log in, and manage their bookings securely.
+- **Favorites/Bookmarking**: Allow users to save properties they are interested in for easy access later.
+
+### Primary Pages:
+
+| Page                        | Description                                                        |
+|-----------------------------|--------------------------------------------------------------------|
+| **Property Listing View**    | A grid or list of available properties with filtering options (e.g., location, price, type). Each listing should include an image, brief details, and a "View More" button. |
+| **Listing Detailed View**    | A detailed page for each property, showing high-quality images, full descriptions, amenities, location map, availability calendar, and a booking form. |
+| **Simple Checkout View**     | A clean, straightforward checkout page that collects user information, payment details, and booking confirmation. |
+
+### Importance of a User-Friendly Design in a Booking System:
+A well-designed booking system is critical for:
+- **Reducing Friction**: A smooth, user-friendly interface minimizes user frustration and enhances the overall experience, which can lead to higher conversion rates (more users completing their bookings).
+- **Improving Customer Satisfaction**: Easy navigation, clear visual elements, and a quick, secure checkout process ensure customers have a positive experience, leading to repeat use.
+- **Increasing Trust**: A professional and intuitive design builds trust with users, which is essential for a service that involves handling personal and financial information.
+
+### Design Properties from Figma
+
+#### Color Styles:
+- **Primary Color:** `#FF5A5F` – used for main call-to-action buttons and highlights
+- **Secondary Color:** `#008489` – used for accents, secondary actions
+- **Background Color:** `#FFFFFF` – clean and minimal background
+- **Primary Text Color:** `#222222` – used for main body text
+- **Secondary Text Color:** `#717171` – used for supporting or placeholder text
+
+#### Typography:
+- **Primary Font Family:** Circular
+- **Headings:**
+  - Font Weight: Bold (700)
+  - Font Size: 24px–32px
+- **Body Text:**
+  - Font Weight: Medium (500)
+  - Font Size: 16px
+- **Secondary Text:**
+  - Font Weight: Book (400)
+  - Font Size: 14px
+
+###  Importance of Identifying Design Properties in a Mockup:
+Understanding the design properties in a mockup is essential for maintaining **visual consistency and brand identity** across the application. By referencing styles such as color schemes and typography:
+- Developers ensure the frontend matches the designer’s vision pixel-perfectly.
+- Teams can implement components that are **reusable and scalable**.
+- Accessibility is improved through deliberate choices in contrast and text clarity.
+- Collaboration between designers and developers becomes smoother and more efficient.
+- It sets the foundation for a coherent and professional **user experience** across all devices.
+
+
+  ## Project Roles and Responsibilities
+
+Successful project execution requires clear role definitions and accountability. Below are the main roles involved in the AirBnB Clone Project and their responsibilities:
+
+| Role               | Responsibilities |
+|--------------------|------------------|
+| **Project Manager** | Oversees the entire project timeline, assigns tasks, coordinates team communication, and ensures milestones are met on time. Acts as the central point of contact. |
+| **Frontend Developers** | Build and maintain the user interface using HTML, CSS, and JavaScript (React). Ensure responsiveness, accessibility, and alignment with Figma designs. |
+| **Backend Developers** | Design and implement the server-side logic, APIs, and database integration. Handle business logic, user data, authentication, and performance optimization. |
+| **Designers** | Create mockups, maintain visual consistency, define design systems, and ensure a user-centric interface. Provide Figma prototypes and assets. |
+| **QA/Testers** | Write test cases, perform manual and automated testing, report bugs, and ensure the final product meets quality standards. Focus on usability, functionality, and performance. |
+| **DevOps Engineers** | Set up CI/CD pipelines, handle deployment, monitor infrastructure, and ensure high availability and scalability of the app. |
+| **Product Owner** | Represents end users and stakeholders. Defines product requirements, prioritizes features, and ensures the team delivers maximum value. |
+| **Scrum Master** | Facilitates agile ceremonies (sprint planning, daily stand-ups, retrospectives), removes blockers, and promotes continuous improvement. Ensures agile best practices are followed. |
+
+
+## UI Component Patterns
+
+To build a scalable and consistent interface, the following reusable UI components are planned for the AirBnB Clone project:
+
+###  Navbar
+- Contains the logo, search bar, user navigation (login/profile), and a responsive hamburger menu.
+- Ensures consistent navigation across all pages.
+- Mobile-first design for full responsiveness.
+
+### Property Card
+- Displays a thumbnail image, property title, location, rating, and pricing per night.
+- Includes a “favorite” (wishlist) button.
+- Designed for grid layout on listing pages and optimized for responsiveness.
+
+### Footer
+- Contains site links (About, Help, Terms, Privacy), company info, and social media icons.
+- Appears on every page and maintains a clean, minimal aesthetic.
+- Ensures legal and informational accessibility.
+
+### Booking Form
+- Embedded on the property detail page.
+- Allows users to select check-in/check-out dates, guest count, and proceed to checkout.
+- Built with form validation and accessibility in mind.
+
+### Buttons
+- Primary buttons for actions like “Book Now”, “Login”, “Search”.
+- Secondary buttons for less critical actions.
+- Consistent color styling and hover states based on Figma specs.
+
+### 🧾 Modal Windows
+- For login, registration, or confirming actions.
+- Reusable layout with a focus on accessibility (keyboard and screen reader support).
+
+---
+
+These components are designed to be **modular, responsive, and reusable** across the application to maintain consistency, improve development speed, and support scalability.
+
+
+
+
+
 ## Manual Review
 This `README.md` file contains all the required sections for review as part of the Airbnb Clone Project setup.
 
